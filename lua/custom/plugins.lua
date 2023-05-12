@@ -60,9 +60,15 @@ local plugins = {
     },
   },
 
-  -- install vim fugitive
+  -- install vim-fugitive
   {
     "tpope/vim-fugitive",
+    lazy = false,
+  },
+
+  -- install vim-be-good
+  {
+    "ThePrimeagen/vim-be-good",
     lazy = false,
   },
 
