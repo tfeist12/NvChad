@@ -15,8 +15,10 @@ local plugins = {
         "deno",
         -- format 
         "stylua",
-        "gofumpt",
         "black",
+        "gofumpt",
+        "goimports-reviser",
+        "golines",
         "prettier",
       },
     },
@@ -29,7 +31,7 @@ local plugins = {
      dependencies = {
        "jose-elias-alvarez/null-ls.nvim",
        config = function()
-         require "custom.configs.null-ls"
+          require "custom.configs.null-ls"
        end,
      },
 
@@ -63,19 +65,32 @@ local plugins = {
   -- tmux integration
   {
     "christoomey/vim-tmux-navigator",
-    lazy = false,
+    cmd = {
+      "TmuxNavigateLeft",
+      "TmuxNavigateRight",
+      "TmuxNavigateUp",
+      "TmuxNavigateDown",
+    },
+    lazy = true,
   },
 
   -- install vim-fugitive
   {
     "tpope/vim-fugitive",
-    lazy = false,
+    cmd = {
+      "G", 
+      "Git",
+    },
+    lazy = true,
   },
 
   -- install vim-be-good
   {
     "ThePrimeagen/vim-be-good",
-    lazy = false,
+    cmd = {
+      "VimBeGood",
+    },
+    lazy = true,
   },
 
 }
