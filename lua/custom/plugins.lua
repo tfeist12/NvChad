@@ -60,6 +60,12 @@ local plugins = {
     },
   },
 
+  -- tmux integration
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+
   -- install vim-fugitive
   {
     "tpope/vim-fugitive",
