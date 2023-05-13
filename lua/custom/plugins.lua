@@ -42,6 +42,18 @@ local plugins = {
      end,
   },
 
+  -- add trouble plugin for lsp
+  {
+    "folke/trouble.nvim",
+    cmd = {
+      "Trouble",
+      "TroubleClose",
+      "TroubleRefresh",
+      "TroubleToggle",
+    },
+    lazy = true,
+  },
+
   -- custom parser list 
   {
     "nvim-treesitter/nvim-treesitter",
@@ -79,7 +91,7 @@ local plugins = {
   {
     "tpope/vim-fugitive",
     cmd = {
-      "G", 
+      "G",
       "Git",
     },
     lazy = true,
