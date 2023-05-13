@@ -20,6 +20,7 @@ local plugins = {
         "goimports-reviser",
         "golines",
         "prettier",
+        "shellcheck",
       },
     },
   },
