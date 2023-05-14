@@ -7,7 +7,7 @@ local lint = null_ls.builtins.diagnostics
 local sources = {
   -- define formatting sources
   formatting.stylua,
-  formatting.black,
+  formatting.blue,
   formatting.gofumpt,
   formatting.goimports_reviser,
   formatting.golines,

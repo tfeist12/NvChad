@@ -15,7 +15,7 @@ local plugins = {
         "deno",
         -- format 
         "stylua",
-        "black",
+        "blue",
         "gofumpt",
         "goimports-reviser",
         "golines",
