@@ -31,6 +31,10 @@
 <img src="https://nvchad.com/screenshots/onedark.webp">
 <img src="https://nvchad.com/screenshots/rxyhn1.webp">
 
+## Install
+
+- git clone https://github.com/tfeist12/NvChad ~/.config/nvim --depth 1 && nvim
+
 ## What is it?
 
 - NvChad is a neovim config written in lua aiming to provide a base configuration with very beautiful UI and blazing fast startuptime (around 0.02 secs ~ 0.07 secs). We tweak UI plugins such as telescope, nvim-tree, bufferline etc well to provide an aesthetic UI experience. 
