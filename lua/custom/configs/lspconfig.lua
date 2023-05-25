@@ -3,8 +3,8 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 local servers = {
--- lsp 
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
+  -- lsp
+  -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
   "lua_ls",
   "bashls",
   "pyright",

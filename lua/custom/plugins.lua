@@ -2,8 +2,8 @@ local plugins = {
 
   -- install lsp servers and formatters
   {
-   "williamboman/mason.nvim",
-   opts = {
+    "williamboman/mason.nvim",
+    opts = {
       ensure_installed = {
         -- lsp
         "lua-language-server",
@@ -13,9 +13,10 @@ local plugins = {
         "html-lsp",
         "css-lsp",
         "deno",
-        -- format 
+        -- format
         "stylua",
         "blue",
+        "usort",
         "gofumpt",
         "goimports-reviser",
         "golines",
@@ -25,21 +26,21 @@ local plugins = {
     },
   },
 
-  -- setup lsp for installed servers 
+  -- setup lsp for installed servers
   {
     "neovim/nvim-lspconfig",
 
-     dependencies = {
-       "jose-elias-alvarez/null-ls.nvim",
-       config = function()
-          require "custom.configs.null-ls"
-       end,
-     },
+    dependencies = {
+      "jose-elias-alvarez/null-ls.nvim",
+      config = function()
+        require "custom.configs.null-ls"
+      end,
+    },
 
-     config = function()
-        require "plugins.configs.lspconfig"
-        require "custom.configs.lspconfig"
-     end,
+    config = function()
+      require "plugins.configs.lspconfig"
+      require "custom.configs.lspconfig"
+    end,
   },
 
   -- add trouble plugin for lsp
@@ -54,7 +55,7 @@ local plugins = {
     lazy = true,
   },
 
-  -- custom parser list 
+  -- custom parser list
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -105,7 +106,6 @@ local plugins = {
     },
     lazy = true,
   },
-
 }
 
 return plugins

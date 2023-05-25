@@ -8,11 +8,17 @@ local sources = {
   -- define formatting sources
   formatting.stylua,
   formatting.blue,
+  formatting.usort,
   formatting.gofumpt,
   formatting.goimports_reviser,
   formatting.golines,
   formatting.prettier,
   lint.shellcheck,
+}
+
+null_ls.setup {
+  debug = true,
+  sources = sources,
 
   -- auto format on save
   on_attach = function(client, bufnr)
@@ -30,9 +36,4 @@ local sources = {
       })
     end
   end,
-}
-
-null_ls.setup {
-  debug = true,
-  sources = sources,
 }
