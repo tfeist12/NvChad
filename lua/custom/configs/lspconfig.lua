@@ -2,6 +2,7 @@ local on_attach = require("plugins.configs.lspconfig").on_attach
 local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
+
 local servers = {
   -- lsp
   -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
@@ -12,6 +13,8 @@ local servers = {
   "html",
   "cssls",
   "denols",
+  "jqls",
+  "yamlls",
 }
 
 for _, lsp in ipairs(servers) do

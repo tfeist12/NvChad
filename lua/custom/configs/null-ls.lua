@@ -7,13 +7,15 @@ local lint = null_ls.builtins.diagnostics
 local sources = {
   -- define formatting sources
   formatting.stylua,
+  formatting.shfmt,
   formatting.blue,
   formatting.usort,
   formatting.gofumpt,
   formatting.goimports_reviser,
   formatting.golines,
   formatting.prettier,
-  formatting.shfmt,
+  formatting.jq,
+  formatting.yamlfmt,
   lint.shellcheck,
 }
 
