@@ -21,6 +21,8 @@ local plugins = {
         "goimports-reviser",
         "golines",
         "prettier",
+        "shfmt",
+        -- lint
         "shellcheck",
       },
     },

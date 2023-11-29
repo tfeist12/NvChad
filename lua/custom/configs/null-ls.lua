@@ -13,6 +13,7 @@ local sources = {
   formatting.goimports_reviser,
   formatting.golines,
   formatting.prettier,
+  formatting.shfmt,
   lint.shellcheck,
 }
 
