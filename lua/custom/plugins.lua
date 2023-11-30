@@ -15,6 +15,7 @@ local plugins = {
         "deno",
         "jq-lsp",
         "yaml-language-server",
+        "helm-ls",
         -- format
         "stylua",
         "shfmt",
@@ -109,6 +110,15 @@ local plugins = {
     "ThePrimeagen/vim-be-good",
     cmd = {
       "VimBeGood",
+    },
+    lazy = true,
+  },
+
+  -- helm template support
+  {
+    "towolf/vim-helm",
+    ft = {
+      "helm",
     },
     lazy = true,
   },

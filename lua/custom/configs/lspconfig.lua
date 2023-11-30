@@ -15,6 +15,7 @@ local servers = {
   "denols",
   "jqls",
   "yamlls",
+  "helm_ls",
 }
 
 for _, lsp in ipairs(servers) do
