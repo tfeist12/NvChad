@@ -8,7 +8,7 @@ local plugins = {
         -- lsp
         "lua-language-server",
         "bash-language-server",
-        "pyright",
+        "python-lsp-server",
         "gopls",
         "html-lsp",
         "css-lsp",
