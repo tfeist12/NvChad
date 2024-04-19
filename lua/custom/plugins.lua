@@ -25,10 +25,10 @@ local plugins = {
         "goimports-reviser",
         "golines",
         "prettier",
-        "jq",
-        "yamlfmt",
         -- lint
         "shellcheck",
+        "jsonlint",
+        "yamllint",
       },
     },
   },

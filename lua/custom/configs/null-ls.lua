@@ -14,9 +14,10 @@ local sources = {
   formatting.goimports_reviser,
   formatting.golines,
   formatting.prettier,
-  formatting.jq,
-  formatting.yamlfmt,
+  -- define linting sources
   lint.shellcheck,
+  lint.jsonlint,
+  lint.yamllint,
 }
 
 null_ls.setup {
