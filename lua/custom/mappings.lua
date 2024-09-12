@@ -8,16 +8,6 @@ M.custom = {
   },
 }
 
-M.resizewindow = {
-  n = {
-    -- resize windows
-    ["<C-Up>"] = { ":resize -2<CR>", "resize up" },
-    ["<C-Down>"] = { ":resize +2<CR>", "resize down" },
-    ["<C-Left>"] = { ":vertical resize +2<CR>", "resize left" },
-    ["<C-Right>"] = { ":vertical resize -2<CR>", "resize right" },
-  },
-}
-
 M.indent = {
   v = {
     -- stay in mode for indenting
@@ -26,12 +16,21 @@ M.indent = {
   },
 }
 
-M.tmuxnavigate = {
+M.navigation = {
   n = {
-    ["<C-h>"] = { "<cmd> TmuxNavigateLeft<CR>", "window left" },
-    ["<C-l>"] = { "<cmd> TmuxNavigateRight<CR>", "window right" },
-    ["<C-j>"] = { "<cmd> TmuxNavigateDown<CR>", "window down" },
-    ["<C-k>"] = { "<cmd> TmuxNavigateUp<CR>", "window up" },
+    ["<C-h>"] = { "<cmd> SmartCursorMoveLeft<CR>", "move left" },
+    ["<C-l>"] = { "<cmd> SmartCursorMoveRight<CR>", "move right" },
+    ["<C-k>"] = { "<cmd> SmartCursorMoveUp<CR>", "move up" },
+    ["<C-j>"] = { "<cmd> SmartCursorMoveDown<CR>", "move down" },
+  },
+}
+
+M.resizewindow = {
+  n = {
+    ["<S-Left>"] = { "<cmd> SmartResizeLeft<CR>", "resize left" },
+    ["<S-Right>"] = { "<cmd> SmartResizeRight<CR>", "resize right" },
+    ["<S-Up>"] = { "<cmd> SmartResizeUp<CR>", "resize up" },
+    ["<S-Down>"] = { "<cmd> SmartResizeDown<CR>", "resize down" },
   },
 }
 

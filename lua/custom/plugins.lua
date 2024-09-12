@@ -83,19 +83,23 @@ local plugins = {
     },
   },
 
-  -- tmux integration
+  -- smart splits
   {
-    "christoomey/vim-tmux-navigator",
+    "mrjones2014/smart-splits.nvim",
     cmd = {
-      "TmuxNavigateLeft",
-      "TmuxNavigateRight",
-      "TmuxNavigateUp",
-      "TmuxNavigateDown",
+      "SmartCursorMoveLeft",
+      "SmartCursorMoveRight",
+      "SmartCursorMoveUp",
+      "SmartCursorMoveDown",
+      "SmartResizeLeft",
+      "SmartResizeRight",
+      "SmartResizeUp",
+      "SmartResizeDown",
     },
     lazy = true,
   },
 
-  -- install vim-fugitive
+  -- vim-fugitive
   {
     "tpope/vim-fugitive",
     cmd = {
@@ -105,7 +109,7 @@ local plugins = {
     lazy = true,
   },
 
-  -- install vim-be-good
+  -- vim-be-good
   {
     "ThePrimeagen/vim-be-good",
     cmd = {
