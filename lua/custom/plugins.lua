@@ -9,11 +9,11 @@ local plugins = {
         "lua-language-server",
         "bash-language-server",
         "python-lsp-server",
-        "gopls",
+        "gopls@v0.15.3", -- compatibility with go v1.19.13
         "html-lsp",
         "css-lsp",
         "deno",
-        "jq-lsp",
+        "jq-lsp@v0.1.3", -- compatibility with go v1.19.13
         "yaml-language-server",
         "helm-ls",
         -- format
@@ -21,7 +21,7 @@ local plugins = {
         "shfmt",
         "blue",
         "usort",
-        "gofumpt",
+        "gofumpt@v0.5.0", -- compatibility with go v1.19.13
         "goimports-reviser",
         "golines",
         "prettier",
