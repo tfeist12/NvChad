@@ -86,17 +86,9 @@ local plugins = {
   -- smart splits
   {
     "mrjones2014/smart-splits.nvim",
-    cmd = {
-      "SmartCursorMoveLeft",
-      "SmartCursorMoveRight",
-      "SmartCursorMoveUp",
-      "SmartCursorMoveDown",
-      "SmartResizeLeft",
-      "SmartResizeRight",
-      "SmartResizeUp",
-      "SmartResizeDown",
-    },
-    lazy = true,
+    -- unable to get proper behaviour while lazy loading
+    -- makes minimal impact on startup time
+    lazy = false,
   },
 
   -- vim-fugitive

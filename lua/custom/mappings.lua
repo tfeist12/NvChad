@@ -18,10 +18,10 @@ M.indent = {
 
 M.navigation = {
   n = {
-    ["<C-h>"] = { "<cmd> SmartCursorMoveLeft<CR>", "move left" },
-    ["<C-l>"] = { "<cmd> SmartCursorMoveRight<CR>", "move right" },
-    ["<C-k>"] = { "<cmd> SmartCursorMoveUp<CR>", "move up" },
-    ["<C-j>"] = { "<cmd> SmartCursorMoveDown<CR>", "move down" },
+    ["<C-h>"] = { "<cmd> SmartCursorMoveLeft<CR>", "window left" },
+    ["<C-l>"] = { "<cmd> SmartCursorMoveRight<CR>", "window right" },
+    ["<C-k>"] = { "<cmd> SmartCursorMoveUp<CR>", "window up" },
+    ["<C-j>"] = { "<cmd> SmartCursorMoveDown<CR>", "window down" },
   },
 }
 
