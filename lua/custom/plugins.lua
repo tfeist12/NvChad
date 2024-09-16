@@ -83,6 +83,20 @@ local plugins = {
     },
   },
 
+  -- harpoon
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+
+    config = function()
+      require("harpoon"):setup()
+    end,
+  },
+
   -- smart splits
   {
     "mrjones2014/smart-splits.nvim",

@@ -16,6 +16,36 @@ M.indent = {
   },
 }
 
+M.harpoon = {
+  n = {
+    ["<leader>h"] = {
+      function()
+        local harpoon = require "harpoon"
+        harpoon.ui:toggle_quick_menu(harpoon:list())
+      end,
+      "quick menu",
+    },
+    ["<leader>a"] = {
+      function()
+        require("harpoon"):list():add()
+      end,
+      "add file",
+    },
+    ["<leader>n"] = {
+      function()
+        require("harpoon"):list():next()
+      end,
+      "next file",
+    },
+    ["<leader>p"] = {
+      function()
+        require("harpoon"):list():prev()
+      end,
+      "previous file",
+    },
+  },
+}
+
 M.navigation = {
   n = {
     ["<C-h>"] = { "<cmd> SmartCursorMoveLeft<CR>", "window left" },
