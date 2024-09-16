@@ -23,6 +23,7 @@ function Toggle_telescope(harpoon_files)
           preview_cutoff = 120,
         },
         attach_mappings = function(prompt_bufnr, map)
+          map("n", "<leader>h", require("telescope.actions").close)
           map("n", "<leader>d", function()
             local state = require "telescope.actions.state"
             local selected_entry = state.get_selected_entry()

@@ -31,13 +31,13 @@ M.harpoon = {
       end,
       "add file",
     },
-    ["<leader>n"] = {
+    ["<leader>j"] = {
       function()
         require("harpoon"):list():next()
       end,
       "next file",
     },
-    ["<leader>p"] = {
+    ["<leader>k"] = {
       function()
         require("harpoon"):list():prev()
       end,
