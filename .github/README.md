@@ -33,7 +33,7 @@
 
 ## Install
 
-- git clone https://github.com/tfeist12/NvChad ~/.config/nvim --depth 1 && nvim
+- git clone -b v2.0-vdt --single-branch https://github.com/tfeist12/NvChad ~/.config/nvim --depth 1 && nvim
 
 ## What is it?
 
