@@ -282,9 +282,6 @@ M.telescope = {
 
     -- theme switcher
     ["<leader>th"] = { "<cmd> Telescope themes <CR>", "nvchad themes" },
-
-    -- bookmarks
-    ["<leader>bm"] = { "<cmd> Telescope marks <CR>", "telescope bookmarks" },
   },
 }
 
