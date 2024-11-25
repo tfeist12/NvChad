@@ -16,6 +16,14 @@ M.indent = {
   },
 }
 
+M.Trouble = {
+  n = {
+    ["<leader>t"] = { "<cmd>Trouble diagnostics toggle<cr>", "trouble diagnostics" },
+    ["<leader>ts"] = { "<cmd>Trouble symbols toggle focus=false<cr>", "trouble symbols" },
+    ["<leader>tl"] = { "<cmd>Trouble lsp toggle focus=false win.position=right<cr>", "trouble lsp" },
+  },
+}
+
 M.harpoon = {
   n = {
     ["<leader>h"] = {

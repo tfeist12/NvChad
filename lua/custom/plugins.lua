@@ -55,10 +55,8 @@ local plugins = {
     "folke/trouble.nvim",
     cmd = {
       "Trouble",
-      "TroubleClose",
-      "TroubleRefresh",
-      "TroubleToggle",
     },
+    opts = {},
     lazy = true,
   },
 
