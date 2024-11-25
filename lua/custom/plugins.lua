@@ -134,6 +134,43 @@ local plugins = {
     },
     lazy = true,
   },
+
+  -- copilot
+  {
+    "zbirenbaum/copilot.lua",
+    config = function()
+      require("copilot").setup {
+        panel = { enabled = true },
+        suggestion = { enabled = false },
+      }
+    end,
+    lazy = false,
+  },
+
+  -- copilot cmp
+  {
+    "zbirenbaum/copilot-cmp",
+    config = function()
+      require("copilot_cmp").setup()
+    end,
+    lazy = false,
+  },
+
+  -- copilot chat
+  {
+    "CopilotC-Nvim/CopilotChat.nvim",
+    cmd = {
+      "CopilotChat",
+    },
+    branch = "canary",
+    dependencies = {
+      { "zbirenbaum/copilot.lua" },
+      { "nvim-lua/plenary.nvim" },
+    },
+    build = "make tiktoken",
+    opts = {},
+    lazy = true,
+  },
 }
 
 return plugins
